@@ -10,10 +10,13 @@ public class Main {
         SpeakerService service1 = appContext.getBean("speakerService", SpeakerService.class);
         System.out.println(service1);
         System.out.println(service1.findAll().get(0).getFirstName());
+        System.out.println(service1.findAll().get(0).getSecretNumber());
 
+        System.out.println("============");
 
         SpeakerService service2 = appContext.getBean("speakerService", SpeakerService.class);
         System.out.println(service2);
         System.out.println(service2.findAll().get(0).getFirstName());
+        System.out.println(service2.findAll().get(0).getSecretNumber());
     }
 }
