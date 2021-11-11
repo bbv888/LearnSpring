@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Boilerplate name</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <!-- Place favicon.ico in the root directory -->
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="https:\\zf.ro">Link to zf</a></li>
+            <li><a href="greeting">Greeting page</a></li>
+            <li><a href="registration">Registration page</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h1> Update check </h1>
+    <!-- Add your site or application content here -->
+    <p>Hello world! This is HTML5 test.</p>
+    <h1>Header here</h1>
+
+    <form action="https://www.google.com/search" method="get" target="_blank">
+        <input type="text" name="q" id="q">
+        <input type="submit" name="submit" id="submit">
+    </form>
+    <br/>
+
+    <button id="changeBackground" name="Change background" type="button">
+        New color
+    </button>
+
+
+</main>
+<script>
+
+    function getRandomColor() {
+        let letters = '0123456789ABCDEF';
+        let color = '#';
+        for (let i = 0; i < 6; i++) {
+            color += letters[Math.floor(Math.random() * 16)];
+        }
+        return color;
+    }
+
+
+    let button = document.querySelector("#changeBackground");
+
+    button.addEventListener("click", () => {
+        document.body.style.background = getRandomColor();
+    })
+
+/*    document.addEventListener("DOMContentLoaded", () => {
+        window.location.replace(document.location + "/greeting");
+    })*/
+</script>
+</body>
+
+</html>
