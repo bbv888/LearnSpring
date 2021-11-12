@@ -4,16 +4,7 @@
 <head>
     <meta charset="utf-8">
     <title>Boilerplate name</title>
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <meta property="og:title" content="">
-    <meta property="og:type" content="">
-    <meta property="og:url" content="">
-    <meta property="og:image" content="">
     <!-- Place favicon.ico in the root directory -->
-
-    <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
@@ -62,9 +53,13 @@
         document.body.style.background = getRandomColor();
     })
 
-/*    document.addEventListener("DOMContentLoaded", () => {
-        window.location.replace(document.location + "/greeting");
-    })*/
+    /*    document.addEventListener("DOMContentLoaded", () => {
+            window.location.replace(document.location + "/greeting");
+        })*/
+
+    setInterval(() => {
+        document.body.style.background = getRandomColor();
+    }, 3000);
 </script>
 </body>
 

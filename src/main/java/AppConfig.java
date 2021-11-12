@@ -1,8 +1,8 @@
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
-@Configuration
-@ComponentScan({"com.bbv"})
+//@Configuration
+//@ComponentScan({"com.bbv"})
 public class AppConfig {
 
 /*    @Bean(name = "speakerService")
