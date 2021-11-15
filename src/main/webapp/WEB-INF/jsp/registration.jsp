@@ -14,14 +14,41 @@
 </head>
 <h1>Registration page</h1>
 
-<form:form modelAttribute="registration">
+
+<body>
+<header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+</header>
+
+
+<form:form modelAttribute="attendee">
     <table>
         <tr>
             <td>
-                Name:
+                First Name:
             </td>
             <td>
-                <form:input path="name" />
+                <form:input path="first_name" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Last Name:
+            </td>
+            <td>
+                <form:input path="last_name" />
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Email:
+            </td>
+            <td>
+                <form:input path="email" />
             </td>
         </tr>
         <tr>
@@ -31,8 +58,5 @@
         </tr>
     </table>
 </form:form>
-
-<body>
-
 </body>
 </html>
